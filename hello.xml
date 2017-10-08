@@ -1,7 +1,35 @@
 <context>
   <output value="Hola $UserName" />
   <input pattern="(hi|hello) *">
-      <output value="Hola $UserName" />
+      <output channel="facebook">
+  <![CDATA[
+    "attachment":{
+      "type":"template",
+      "payload":{
+        "template_type":"generic",
+        "elements":[
+          {
+            "title":"Welcome $UserName",
+            "image_url":"http://petersapparel.parseapp.com/img/item100-thumb.png",
+            "subtitle":"Nice yo see you again!",
+            "buttons":[
+              {
+                "type":"web_url",
+                "url":"https://petersapparel.parseapp.com/view_item?item_id=100",
+                "title":"View Website"
+              },
+              {
+                "type":"postback",
+                "title":"Start Chatting",
+                "payload":"USER_DEFINED_PAYLOAD"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]]>
+</output>
   </input>
 </context>
 
