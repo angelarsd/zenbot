@@ -1,7 +1,7 @@
 <context>
-  <output value="Hola, como estas? Sabias que debido a la inclusión de muchos nuevos jovenes que van a votar, los lugares de votacion cambiaron? Desde aqui vas a poder consultar donde te corresponde votar en las proximas elecciones."/>
-  <input pattern="*">
-    <output value="Hi!"/>
+  <output value="Hola $UserName" />
+  <input pattern="(hi|hello) *">
+      <output value="Hola $UserName" />
   </input>
 </context>
 
