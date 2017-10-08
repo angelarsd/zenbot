@@ -1,11 +1,15 @@
 <context>
   <input pattern="(hi|hello) *">
-      <output value="Hello $req_user_name! To buy our beautiful product just click a Buy button. Thank you!"/>
-    <context>
-      <input pattern="* where * (find|it) *">
-        <output value="The Buy button is placed at the top of main screen."/>
-      </input>
-    </context>
-  </input>
+  <output value="Hi! What is your favorite color?"/>
+
+  <context>
+    <input pattern="* $Color"/>
+    <sample>
+      <item>Green</item>
+      <item>Blue</item>
+      <item>Red</item>
+    </sample>
+  </context>
+</input>
 </context>
 
