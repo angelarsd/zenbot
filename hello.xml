@@ -1,13 +1,11 @@
 <context>
   <input pattern="(hi|hello) *">
-  <output value="Hi! What is your favorite color?">
-  <context>
+  <output>
     <sample>
       <item>Green</item>
       <item>Blue</item>
       <item>Red</item>
     </sample>
-  </context>
   </output>
   </input>
 </context>
