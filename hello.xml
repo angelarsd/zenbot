@@ -1,10 +1,16 @@
 <context>
+  <output value="Hola, bienvenido"/>
+</context>
+  <context>
   <input pattern="(hi|hello|hola) *">
+  <output value="Cual es tu color favorio?"/>
+  <output>
     <sample>
       <item>Verde</item>
       <item>Azul</item>
       <item>Rojo</item>
     </sample>
+  </output>
   </input>
 </context>
 
