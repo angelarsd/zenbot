@@ -1,10 +1,12 @@
 <context>
   <input pattern="(hi|hello|hola) *">
+  <output>
     <sample>
       <item>Verde</item>
       <item>Azul</item>
       <item>Rojo</item>
     </sample>
+  </output>
   </input>
 </context>
 
