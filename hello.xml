@@ -1,8 +1,11 @@
 <context>
   <input pattern="(Empezar|Apreta Comenzar) *">
     <output value="Indicanos tu DNI para que te podamos indicar la informacion correspondiente"/>
-    <input pattern="$Text">
-        <var name="DNI" value="$Text" scope="dni"/>
-        <output value="Tu DNI es $DNI!"/>
+    <context>
+      <input pattern="$Text">
+          <var name="DNI" value="$Text" scope="dni"/>
+          <output value="Tu DNI es $DNI!"/>
+      </input>
+    </context>  
   </input>
 </context>
