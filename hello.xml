@@ -1,4 +1,7 @@
 <context>
-  <output value="Hola, bienvenido"/>
+  <input pattern="(Empezar) *">
+    <output value="Indicanos tu DNI para que te podamos indicar la informacion correspondiente"/>
+  </input>
 </context>
+
 
