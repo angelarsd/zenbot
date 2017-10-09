@@ -16,14 +16,7 @@
               <output value="Ingrese el email:"/>
             </input>
             <input pattern="(No) *">
-              <context>
-                <output value="¿Queres consultar la informacion algun conocido o familiar?:">
-                  <sample>
-                    <item>Si</item>
-                    <item>No</item>
-                  </sample>
-                </output>
-              </context>
+              <output value="¿Queres consultar la informacion algun conocido o familiar?:"/>
             </input>
           /<context>
         </context>
