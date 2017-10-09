@@ -10,11 +10,10 @@
               <item>Si</item>
               <item>No</item>
             </sample>
+            <input pattern="(Si) *">
+              <output value="Ingrese el email:"/>
+            </input>
           </output>
-          <input pattern="(Si) *">
-            <output value="Ingrese el email:"/>
-          </input>
-
         </context>
       </input>
     </context>  
