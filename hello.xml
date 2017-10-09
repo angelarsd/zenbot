@@ -10,10 +10,22 @@
               <item>Si</item>
               <item>No</item>
             </sample>
+          </output>
+          <context>
             <input pattern="(Si) *">
               <output value="Ingrese el email:"/>
             </input>
-          </output>
+            <input pattern="(No) *">
+              <context>
+                <output value="¿Queres consultar la informacion algun conocido o familiar?:">
+                  <sample>
+                    <item>Si</item>
+                    <item>No</item>
+                  </sample>
+                </output>
+              </context>
+            </input>
+          /<context>
         </context>
       </input>
     </context>  
