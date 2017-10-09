@@ -4,13 +4,14 @@
     <context>
       <input pattern="$Text">
           <var name="DNI" value="$Text" scope="dni"/>
-          <output value="Dirección de voto: Calle 1234, deseas que te enviemos la información por email:"/>
-          <context>
-            <sample>
-              <item>Si</item>
-              <item>No</item>
-            </sample>
-          </context>
+          <output value="Dirección de voto: Calle 1234, deseas que te enviemos la información por email:">
+            <context>
+              <sample>
+                <item>Si</item>
+                <item>No</item>
+              </sample>
+            </context>
+          </output>
       </input>
     </context>  
   </input>
