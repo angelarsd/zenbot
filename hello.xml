@@ -1,26 +1,4 @@
 <context>
-  <input pattern="(Empezar|Apreta Comenzar) *">
-    <output value="Indicanos tu DNI para que te podamos indicar la informacion correspondiente"/>
-    <context>
-      <input pattern="$Text">
-        <var name="DNI" value="$Text" scope="dni"/>
-        <context>
-          <output value="Dirección de voto: Calle 1234, deseas que te enviemos la información por email:">
-            <sample>
-              <item>Si</item>
-              <item>No</item>
-            </sample>
-          </output>
-          <context>
-            <input pattern="(Si) *">
-              <output value="Ingrese el email:"/>
-            </input>
-            <input pattern="(No) *">
-              <output value="¿Queres consultar la informacion algun conocido o familiar?:"/>
-            </input>
-          /<context>
-        </context>
-      </input>
-    </context>  
+  <input>
   </input>
 </context>
